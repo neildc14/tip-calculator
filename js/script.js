@@ -50,6 +50,8 @@ reset.addEventListener('click', function(){
     fifteenPercent.value = "";
     twentyFivePercent.value = "";
     numberInput.value = "";
+    tipAmount.value = "";
+    totalAmount.value = "";
 
 })
 
