@@ -1,0 +1,183 @@
+* {
+  font-family: "Space Mono", monospace;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+.heading-title {
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7f9c9f;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.card-top-left {
+  padding-top: .5rem;
+}
+
+.card-top-left .card-bill__output {
+  width: 100%;
+  margin: 1rem auto;
+  padding: .5rem;
+  border-radius: 8px;
+  font-size: 2rem;
+  background-color: #f4fafa;
+  color: #7f9c9f;
+}
+
+.card-top-left .card-bill__output .card-bill__value {
+  font-weight: 800;
+  color: #00494d;
+}
+
+.card-top-left .card-select-tip {
+  margin-top: 2rem;
+}
+
+.card-top-left .card-select-tip .card-select-tip__heading {
+  margin-bottom: 1rem;
+}
+
+.card-top-left .card-select-tip input {
+  width: 48%;
+  margin: 5px 0;
+  padding: .5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #00494d;
+}
+
+.card-top-left .card-select-tip input:active {
+  color: #00494d;
+  background-color: #26c0ab;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-top-left .card-select-tip #custom {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+}
+
+.card-top-left .card-select-tip #custom:active {
+  color: white;
+  background-color: #5e7a7d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-top-left .number-of-people {
+  margin-top: 3rem;
+}
+
+.card-top-left .number-of-people .number-of-people__heading #zeroWarning {
+  font-size: 12px;
+  color: #aa0909;
+}
+
+.card-top-left .number-of-people .number-of-people__input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-top-left .number-of-people .number-of-people__input .material-icons {
+  position: absolute;
+  color: #5e7a7d;
+}
+
+.card-top-left .number-of-people .number-of-people__input input {
+  width: 100%;
+  padding: .5rem 10px !important;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00494d;
+}
+
+.card-bottom-right {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #00494d;
+}
+
+.card-bottom-right .label {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.card-bottom-right .card-bottom-right__value {
+  padding-left: 2px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.card-bottom-right .perPerson {
+  font-size: 14px;
+  font-weight: 700;
+  color: #7f9c9f;
+}
+
+.card-bottom-right .card-tip-amount {
+  padding-top: .5rem;
+  padding-bottom: 2rem;
+}
+
+.card-bottom-right .card-total {
+  padding-top: .5rem;
+  padding-bottom: 2rem;
+}
+
+.card-bottom-right .reset {
+  width: 100%;
+  padding: .5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00494d;
+  background-color: #26c0ab;
+}
+
+.card-bottom-right .reset:active {
+  background-color: #00494d;
+  color: #26c0ab;
+}
+/*# sourceMappingURL=style.css.map */
