@@ -45,13 +45,11 @@ function tip(){
 
 reset.addEventListener('click', function(){
     billCost .value = "";
-    fivePercent.value = "";
-    tenPercent.value = "";
-    fifteenPercent.value = "";
-    twentyFivePercent.value = "";
     numberInput.value = "";
     tipAmount.innerHTML = "0.00";
     totalAmount.innerHTML = "0.00";
+
+
 
 })
 
