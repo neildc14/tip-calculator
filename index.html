@@ -14,21 +14,23 @@
 </head>
 <body>
     <main>
-      <div class="container">
+      <div class="container-fluid">
         <div class="heading-title text-center ">
           <span>SPLI</span>
           <br>
           <span>TTER</span>
         </div>
-        <div class="card">
+        <div class="card d-flex flex">
           <div class="card-top-left">
             <div class="card-bill">
               <div class="card-bill__heading heading">
                 <span>Bill</span>
               </div>
               <div class="card-bill__output d-flex justify-content-between">
-                <span>$</span>
-                <span class="card-bill__value">0.00</span>
+                <div class="card-bill__input-field d-flex">
+                  <span class="ps-3">$</span>
+                  <input type="number" class="card-bill__value form-control" id="billCost" value="">
+                </div>
               </div>
             </div>
             <div class="card-select-tip">
@@ -38,19 +40,19 @@
               <div class="card-select-tip__buttons">
                 <div class="row">
                   <div class="col d-flex justify-content-between">
-                    <input type="button" value="5%">
-                    <input type="button" value="10%">
+                    <button type="button" id="fivePercent" value="0.05" >5%</button>
+                    <button type="button" id="tenPercent" value="0.10">10%</button>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col d-flex justify-content-between">
-                    <input type="button" value="15%">
-                    <input type="button" value="25%">
+                    <button type="button" id="fifteenPercent" value="0.15">15%</button>
+                    <button type="button" id="twentyFivePercent" value="0.25">25%</button>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col d-flex justify-content-between">
-                    <input type="button" value="50%">
+                    <button type="button" id="fiftyPercent" value="0.50">50%</button>
                     <input id="custom" type="button" value="Custom">
                   </div>
                 </div>
@@ -97,7 +99,7 @@
               </div>
             </div>
             <div>
-              <button type="reset" class="reset">RESET</button>
+              <button type="reset" class="reset" id="reset">RESET</button>
             </div>
           </div>         
         </div>
