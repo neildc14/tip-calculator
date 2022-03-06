@@ -39,7 +39,9 @@ function tip(){
     parseFloat(numberInput.value);
     tipAmount.innerHTML = tipValue.toFixed(2);
 
-    totalAmount.innerHTML = (parseFloat(billCost.value) + tipValue).toFixed(2);
+    totalAmount.innerHTML = 
+    ((parseFloat(billCost.value) + tipValue)/ 
+    parseFloat(numberInput.value)).toFixed(2);
   
 }
 
@@ -48,9 +50,6 @@ reset.addEventListener('click', function(){
     numberInput.value = "";
     tipAmount.innerHTML = "0.00";
     totalAmount.innerHTML = "0.00";
-
-
-
 })
 
 
